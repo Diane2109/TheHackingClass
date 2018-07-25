@@ -1,7 +1,16 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
+
+# La gem faker permet de créer des noms possibles de manière random.
+
+5.times do |index| # Crée 5 cours random avec Faker
+  course = Course.create(name: Faker::Book.title, professor: Faker::Name.last_name)
+end
+
+20.times do |index|# Crée 20 étudiants random avec Faker
+  student = Student.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, course_id: rand(1..5))
+end
+
+puts ""
+puts "20 prénoms et noms d'étudiants et 5 cours ont été attribué aléatoirement."
+puts ""
