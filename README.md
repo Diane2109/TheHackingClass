@@ -1,24 +1,27 @@
-# README
+# README De THE HACKING CLASS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Application Class
 
-Things you may want to cover:
+Salut moussaillon tu vas bien ?
 
-* Ruby version
+Dans ce README il y a un exo d'une app rails de type Classe de cours avec des élèves. Il a été fait par Diane !
 
-* System dependencies
+### Lancer l'appli
+Télécharge ou clone le repo 
 
-* Configuration
+Place toi dans le dossier correspondant et fait depuis ton terminal
+``` bundle install ```
 
-* Database creation
+Puis dans le dossier db ouvre le fichier sqlite pour voir les bases de données.
 
-* Database initialization
+Bon appétit!
 
-* How to run the test suite
+### Contenu
 
-* Services (job queues, cache servers, search engines, etc.)
+#### Le concept
+Un étudiant peut assister à un seul cours.
+Un cours peut comporter plusieurs élèves.
 
-* Deployment instructions
 
-* ...
+###### Bon THP à toi moussaillon!
+
